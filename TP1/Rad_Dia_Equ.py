@@ -48,7 +48,7 @@ def ani_Rad_Dia(fig,ax,l):
         ax.set_ylabel('Y')
         ax.set_zlabel('Z')
         ax.set_title(f'Gráfico de diagrama de radiación para l={l[frame]}')
-        fig.savefig(f'./Imagenes3D/Long_{l[frame]}_lambda.png')
+        fig.savefig(f'./Imagenes3D/Long_{l[frame]}_lambda.png') # Comentar esta línea si no se desean guardar las imágenes
         return ax
 
     return FuncAnimation(fig, update, frames=len(l), interval=200)
@@ -69,7 +69,7 @@ def ani_Plane_RD(fig,ax,l):
         ax.set_xlabel('X')
         ax.set_ylabel('Z')
         ax.set_title(f'Gráfico de diagrama de radiación para l={l[frame]}')
-        fig.savefig(f'./Imagenes2D/Long_{l[frame]}_lambda.png')
+        fig.savefig(f'./Imagenes2D/Long_{l[frame]}_lambda.png') # Comentar esta línea si no se desean guardar las imágenes
         return ax
 
     return FuncAnimation(fig, update, frames=len(l), interval=200)
